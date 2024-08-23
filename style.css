@@ -134,14 +134,18 @@ section {
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-
+        background: url(images/bg-desktop.png)no-repeat center;
+        background-position: center bottom;
+        background-size: contain;
+        background-attachment: fixed;
+        background-color: var(--Very-Dark-Blue);
         margin: 0; /* Pastikan margin dihapus agar flex centering berfungsi */
     }
   
     main {
         display: grid; /* Pastikan main adalah grid container */
         grid-template-columns: repeat(3, 1fr); /* Membagi grid menjadi dua kolom */
-          grid-template-rows: auto auto; /* 2 baris */
+        max-width: 80%;
     }
 
     section {
@@ -151,7 +155,10 @@ section {
     }
 
     .section-1 {
-        grid-column: 1 / 2; /* Menempatkan item di kolom pertama */
+        grid-column: 1 / 2; 
+        /* Menempatkan item di kolom pertama */ 
+        padding-right: 14rem;
+        
     }
     .section-2 {
         grid-column: 2 / 4;
