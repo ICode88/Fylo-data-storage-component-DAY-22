@@ -145,7 +145,7 @@ section {
     main {
         display: grid; /* Pastikan main adalah grid container */
         grid-template-columns: repeat(3, 1fr); /* Membagi grid menjadi dua kolom */
-        max-width: 80%;
+        max-width: 55%;
     }
 
     section {
